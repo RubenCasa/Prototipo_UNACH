@@ -1,0 +1,33 @@
+# Dependencias de Node / React
+06_Dashboard_React/node_modules/
+06_Dashboard_React/dist/
+06_Dashboard_React/.env
+
+# Datasets grandes (subir por separado o con Git LFS)
+01_Diseno_e_Implementacion_ML/dataset_LMS_2025_2S.xlsx
+01_Diseno_e_Implementacion_ML/dataset_sicoa_2025.xlsx
+01_Diseno_e_Implementacion_ML/dataset_procesado.csv
+01_Diseno_e_Implementacion_ML/dataset_procesado.xlsx
+
+# Modelos guardados
+08_Datos_Oficiales_UNACH/modelos_guardados/*.pkl
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.tmp
+~$*.docx
+
+# Vercel
+.vercel/

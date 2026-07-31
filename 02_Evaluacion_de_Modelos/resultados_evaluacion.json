@@ -1,0 +1,254 @@
+{
+  "fecha_evaluacion": "2026-07-29 15:09:13",
+  "best_model": "XGBoost",
+  "n_features": 30,
+  "feature_names": [
+    "ultimo_nivel",
+    "niveles_aprobados",
+    "nivel",
+    "nombre_asignatura",
+    "matriculas_nivelacion",
+    "promedio_nivelacion",
+    "num_retiros",
+    "canton_procedencia",
+    "sector_procedencia",
+    "provincia_residencia",
+    "enfermedad",
+    "tipo_beca",
+    "vulnerabilidad",
+    "edad",
+    "total_eventos",
+    "duracion_promedio_seg",
+    "tiempo_conexion_total_min",
+    "tiempo_conexion_promedio_min",
+    "calificacion_lms_min",
+    "calificacion_lms_std",
+    "evt_assignment_submitted",
+    "evt_course_viewed",
+    "evt_forum_post",
+    "comp_tarea",
+    "tasa_errores",
+    "tasa_quiz_completado",
+    "intensidad_foro",
+    "minutos_por_dia_activo",
+    "es_repetidor",
+    "riesgo_historico"
+  ],
+  "train_size": 3200,
+  "test_size": 800,
+  "target_distribution": {
+    "en_riesgo": 1879,
+    "sin_riesgo": 2121
+  },
+  "resultados_cv": {
+    "Logistic Regression": {
+      "accuracy_mean": 0.5171875,
+      "accuracy_std": 0.015148999554426019,
+      "precision_mean": 0.47865228743748156,
+      "precision_std": 0.024881684200064622,
+      "recall_mean": 0.31002879291251384,
+      "recall_std": 0.02051080219841104,
+      "f1_mean": 0.3760680573946814,
+      "f1_std": 0.0211727451407054,
+      "roc_auc_mean": 0.5062539229810055,
+      "roc_auc_std": 0.021606503201791416,
+      "train_accuracy_mean": 0.54953125,
+      "train_f1_mean": 0.4095373294380494
+    },
+    "Decision Tree": {
+      "accuracy_mean": 0.5206250000000001,
+      "accuracy_std": 0.0239302371488458,
+      "precision_mean": 0.4888853031618078,
+      "precision_std": 0.055486590294781445,
+      "recall_mean": 0.18494130675526024,
+      "recall_std": 0.08521028792112226,
+      "f1_mean": 0.25460674637345665,
+      "f1_std": 0.08053090531230414,
+      "roc_auc_mean": 0.5070613750624761,
+      "roc_auc_std": 0.024513269618506577,
+      "train_accuracy_mean": 0.56984375,
+      "train_f1_mean": 0.3265376414590079
+    },
+    "Random Forest": {
+      "accuracy_mean": 0.524375,
+      "accuracy_std": 0.007942665641961777,
+      "precision_mean": 0.4848712081760592,
+      "precision_std": 0.023930127118623856,
+      "recall_mean": 0.17696345514950168,
+      "recall_std": 0.017095533904376865,
+      "f1_mean": 0.2584965719504191,
+      "f1_std": 0.016288292058201686,
+      "roc_auc_mean": 0.5085185621645241,
+      "roc_auc_std": 0.017109620230499174,
+      "train_accuracy_mean": 0.6620312500000001,
+      "train_f1_mean": 0.49425529586468386
+    },
+    "XGBoost": {
+      "accuracy_mean": 0.5053125,
+      "accuracy_std": 0.013571281719130291,
+      "precision_mean": 0.46752996968496346,
+      "precision_std": 0.017299677637985574,
+      "recall_mean": 0.37989590254706535,
+      "recall_std": 0.018045466697956324,
+      "f1_mean": 0.4189686436123691,
+      "f1_std": 0.015516888668163802,
+      "roc_auc_mean": 0.500948804292246,
+      "roc_auc_std": 0.01836710870356043,
+      "train_accuracy_mean": 0.769921875,
+      "train_f1_mean": 0.7345782194645691
+    },
+    "SVM": {
+      "accuracy_mean": 0.5146875000000001,
+      "accuracy_std": 0.015799030824705674,
+      "precision_mean": 0.46947211296256874,
+      "precision_std": 0.03282628770492837,
+      "recall_mean": 0.22887264673311186,
+      "recall_std": 0.023360850599576925,
+      "f1_mean": 0.3063503346618991,
+      "f1_std": 0.01978211019019541,
+      "roc_auc_mean": 0.5010921449295915,
+      "roc_auc_std": 0.0249176839476424,
+      "train_accuracy_mean": 0.685078125,
+      "train_f1_mean": 0.5634764362513549
+    }
+  },
+  "resultados_test": {
+    "Logistic Regression": {
+      "accuracy": 0.4925,
+      "precision": 0.4380165289256198,
+      "recall": 0.28191489361702127,
+      "f1": 0.343042071197411,
+      "auc_roc": 0.48157742874347653,
+      "avg_precision": 0.4545195874175335,
+      "specificity": 0.6792452830188679,
+      "confusion_matrix": [
+        [
+          288,
+          136
+        ],
+        [
+          270,
+          106
+        ]
+      ],
+      "tn": 288,
+      "fp": 136,
+      "fn": 270,
+      "tp": 106
+    },
+    "Decision Tree": {
+      "accuracy": 0.5,
+      "precision": 0.4568345323741007,
+      "recall": 0.3377659574468085,
+      "f1": 0.38837920489296635,
+      "auc_roc": 0.4796831091930952,
+      "avg_precision": 0.4648795547284372,
+      "specificity": 0.6438679245283019,
+      "confusion_matrix": [
+        [
+          273,
+          151
+        ],
+        [
+          249,
+          127
+        ]
+      ],
+      "tn": 273,
+      "fp": 151,
+      "fn": 249,
+      "tp": 127
+    },
+    "Random Forest": {
+      "accuracy": 0.5125,
+      "precision": 0.4453125,
+      "recall": 0.15159574468085107,
+      "f1": 0.2261904761904762,
+      "auc_roc": 0.5043468988358089,
+      "avg_precision": 0.4892011318688908,
+      "specificity": 0.8325471698113207,
+      "confusion_matrix": [
+        [
+          353,
+          71
+        ],
+        [
+          319,
+          57
+        ]
+      ],
+      "tn": 353,
+      "fp": 71,
+      "fn": 319,
+      "tp": 57
+    },
+    "XGBoost": {
+      "accuracy": 0.51625,
+      "precision": 0.48109965635738833,
+      "recall": 0.3723404255319149,
+      "f1": 0.4197901049475262,
+      "auc_roc": 0.5124510738659173,
+      "avg_precision": 0.48185840409620556,
+      "specificity": 0.6438679245283019,
+      "confusion_matrix": [
+        [
+          273,
+          151
+        ],
+        [
+          236,
+          140
+        ]
+      ],
+      "tn": 273,
+      "fp": 151,
+      "fn": 236,
+      "tp": 140
+    },
+    "SVM": {
+      "accuracy": 0.51125,
+      "precision": 0.4550898203592814,
+      "recall": 0.20212765957446807,
+      "f1": 0.27992633517495397,
+      "auc_roc": 0.5066489361702128,
+      "avg_precision": 0.4875062627583168,
+      "specificity": 0.785377358490566,
+      "confusion_matrix": [
+        [
+          333,
+          91
+        ],
+        [
+          300,
+          76
+        ]
+      ],
+      "tn": 333,
+      "fp": 91,
+      "fn": 300,
+      "tp": 76
+    }
+  },
+  "top_features": {
+    "calificacion_lms_min": 0.037773940712213516,
+    "es_repetidor": 0.037660934031009674,
+    "promedio_nivelacion": 0.037403419613838196,
+    "tiempo_conexion_promedio_min": 0.03661728277802467,
+    "canton_procedencia": 0.035912394523620605,
+    "num_retiros": 0.03578968346118927,
+    "edad": 0.03561465069651604,
+    "sector_procedencia": 0.035019662231206894,
+    "intensidad_foro": 0.03495410084724426,
+    "minutos_por_dia_activo": 0.034865498542785645,
+    "evt_course_viewed": 0.03446422889828682,
+    "enfermedad": 0.034350473433732986,
+    "tipo_beca": 0.034019794315099716,
+    "duracion_promedio_seg": 0.03376583009958267,
+    "nivel": 0.033291611820459366,
+    "vulnerabilidad": 0.03283831477165222,
+    "evt_forum_post": 0.03272179886698723,
+    "comp_tarea": 0.03248361870646477,
+    "nombre_asignatura": 0.032336849719285965,
+    "evt_assignment_submitted": 0.03200901672244072
+  }
+}

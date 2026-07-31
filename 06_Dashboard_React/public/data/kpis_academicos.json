@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "fecha_calculo": "2026-07-29 15:08:41",
+    "total_registros": 4000,
+    "version_modelo": "v2.0 — Regularizado",
+    "features_usadas": 30,
+    "features_nuevas": 4
+  },
+  "kpi_ejecutivos": {
+    "KPI_01_Tasa_Riesgo_Academico": {
+      "nombre": "Tasa Global de Riesgo Académico",
+      "valor": 46.98,
+      "unidad": "%",
+      "meta_institucional": "< 25%",
+      "estado": "CRÍTICO"
+    },
+    "KPI_02_Promedio_General_Notas": {
+      "nombre": "Rendimiento Académico Promedio",
+      "valor": 7.16,
+      "unidad": "/ 10.0",
+      "meta_institucional": ">= 7.8",
+      "estado": "ADVERTENCIA"
+    },
+    "KPI_03_Asistencia_Promedio": {
+      "nombre": "Porcentaje Promedio de Asistencia",
+      "valor": 85.0,
+      "unidad": "%",
+      "meta_institucional": ">= 80%",
+      "estado": "ÓPTIMO"
+    },
+    "KPI_04_Efectividad_Modelo_ML": {
+      "nombre": "F1-Score Detección Alerta Temprana (XGBoost v2)",
+      "valor": 0.4198,
+      "unidad": "Score F1",
+      "meta_institucional": ">= 0.40",
+      "estado": "ÓPTIMO"
+    },
+    "KPI_05_Overfitting_Control": {
+      "nombre": "Gap de Generalización (Train vs Test)",
+      "valor": 1.2,
+      "unidad": "%",
+      "meta_institucional": "< 10%",
+      "estado": "ÓPTIMO"
+    }
+  },
+  "desglose_por_carrera": {},
+  "desglose_socioeconomico": {}
+}
