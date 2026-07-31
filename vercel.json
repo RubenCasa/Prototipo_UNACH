@@ -1,6 +1,3 @@
 {
-  "buildCommand": "cd 06_Dashboard_React && npm install && npm run build",
-  "outputDirectory": "06_Dashboard_React/dist",
-  "installCommand": "cd 06_Dashboard_React && npm install",
-  "framework": "vite"
+  "rootDirectory": "06_Dashboard_React"
 }
